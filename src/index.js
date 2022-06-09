@@ -1,7 +1,7 @@
 import express from "express"
 import { APP_PORT } from "./constants"
 import { fetchdata } from "./handlers/fetchdata"
-
+const serverless = require('serverless-http');
 const app = express()
 
 app.get('/', async (req, res) => {
