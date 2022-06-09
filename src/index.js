@@ -10,6 +10,8 @@ app.get('/', async (req, res) => {
     res.send(apiData)
 })
 
-app.listen(APP_PORT, () => {
-    console.log(`Example app listening at http://localhost:${APP_PORT}`)
-})
+// app.listen(APP_PORT, () => {
+//     console.log(`Example app listening at http://localhost:${APP_PORT}`)
+// })
+
+module.exports.handler = serverless(app);
